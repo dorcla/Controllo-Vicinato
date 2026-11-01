@@ -351,7 +351,7 @@
                 <div class="stat-box"><div class="num" id="totalReports">0</div><div>Segnalazioni</div></div>
                 <div class="stat-box"><div class="num" id="openReports">0</div><div>Aperte</div></div>
                 <div class="stat-box"><div class="num" id="highPriority">0</div><div>Alta priorità</div></div>
-                <div class="stat-box"><div class="num">12</div><div>Zone attive</div></div>
+                <div class="stat-box"><div class="num">19</div><div>Zone attive</div></div>
             </div>
         </div>
 
@@ -380,18 +380,31 @@
                 <label>Zona / Quartiere *</label>
                 <select id="zona" required>
                     <option value="">Seleziona zona...</option>
-                    <option>Centro Storico - Quarto San Pietro</option>
-                    <option>Centro Storico - Quarto Santa Maria</option>
-                    <option>Centro Storico - Quarto San Giovanni / San Giorgio</option>
-                    <option>Pile / Santa Barbara</option>
-                    <option>Coppito / Pettino</option>
-                    <option>Roio</option>
-                    <option>Sassa</option>
-                    <option>Paganica</option>
-                    <option>Arischia</option>
-                    <option>Camarda / Assergi</option>
-                    <option>Bagno</option>
-                    <option>Torrione</option>
+                    <option>Centro</option>
+                    <optgroup label="Zona Ovest">
+                        <option>Sassa</option>
+                        <option>Preturo</option>
+                        <option>Coppito</option>
+                        <option>Cansatessa</option>
+                        <option>Arischia</option>
+                    </optgroup>
+                    <optgroup label="Zona Est - Frazioni">
+                        <option>San Gregorio</option>
+                        <option>Onna</option>
+                        <option>Paganica</option>
+                        <option>Bazzano</option>
+                        <option>Tempera</option>
+                        <option>Camarda</option>
+                        <option>Assergi</option>
+                    </optgroup>
+                    <optgroup label="Comuni confinanti Est">
+                        <option>Barisciano</option>
+                        <option>Poggio Picenze</option>
+                        <option>Fossa</option>
+                        <option>Sant'Eusanio Forconese</option>
+                        <option>Villa Sant'Angelo</option>
+                        <option>San Demetrio ne' Vestini</option>
+                    </optgroup>
                     <option>Altra zona</option>
                 </select>
                 <label>Descrizione dettagliata *</label>
@@ -417,12 +430,25 @@
             <p>Clicca sui marker o sui tag per navigare. Puoi anche vedere le segnalazioni geolocalizzate sulla mappa.</p>
             <div class="zones">
                 <span class="zone-tag" data-lat="42.350" data-lng="13.399">Centro</span>
-                <span class="zone-tag" data-lat="42.365" data-lng="13.370">Pile</span>
-                <span class="zone-tag" data-lat="42.370" data-lng="13.345">Coppito</span>
-                <span class="zone-tag" data-lat="42.340" data-lng="13.420">Roio</span>
                 <span class="zone-tag" data-lat="42.330" data-lng="13.380">Sassa</span>
-                <span class="zone-tag" data-lat="42.360" data-lng="13.450">Paganica</span>
+                <span class="zone-tag" data-lat="42.380" data-lng="13.295">Preturo</span>
+                <span class="zone-tag" data-lat="42.370" data-lng="13.345">Coppito</span>
+                <span class="zone-tag" data-lat="42.375" data-lng="13.360">Cansatessa</span>
                 <span class="zone-tag" data-lat="42.410" data-lng="13.340">Arischia</span>
+                <span class="zone-tag" data-lat="42.335" data-lng="13.455">San Gregorio</span>
+                <span class="zone-tag" data-lat="42.325" data-lng="13.480">Onna</span>
+                <span class="zone-tag" data-lat="42.360" data-lng="13.450">Paganica</span>
+                <span class="zone-tag" data-lat="42.340" data-lng="13.470">Bazzano</span>
+                <span class="zone-tag" data-lat="42.345" data-lng="13.490">Tempera</span>
+                <span class="zone-tag" data-lat="42.380" data-lng="13.520">Camarda</span>
+                <span class="zone-tag" data-lat="42.420" data-lng="13.510">Assergi</span>
+                <span class="zone-tag" data-lat="42.320" data-lng="13.590">Barisciano</span>
+                <span class="zone-tag" data-lat="42.320" data-lng="13.540">Poggio Picenze</span>
+                <span class="zone-tag" data-lat="42.300" data-lng="13.490">Fossa</span>
+                <span class="zone-tag" data-lat="42.290" data-lng="13.520">Sant'Eusanio Forconese</span>
+                <span class="zone-tag" data-lat="42.270" data-lng="13.540">Villa Sant'Angelo</span>
+                <span class="zone-tag" data-lat="42.290" data-lng="13.560">San Demetrio ne' Vestini</span>
+            </div>
             </div>
         </div>
 
@@ -455,10 +481,25 @@
                 <input type="text" id="joinNome" placeholder="Il tuo nome" required>
                 <select id="joinZona" required>
                     <option value="">Scegli zona...</option>
-                    <option>Centro Storico</option>
-                    <option>Pile</option>
+                    <option>Centro</option>
+                    <option>Sassa</option>
+                    <option>Preturo</option>
                     <option>Coppito</option>
-                    <option>Roio</option>
+                    <option>Cansatessa</option>
+                    <option>Arischia</option>
+                    <option>San Gregorio</option>
+                    <option>Onna</option>
+                    <option>Paganica</option>
+                    <option>Bazzano</option>
+                    <option>Tempera</option>
+                    <option>Camarda</option>
+                    <option>Assergi</option>
+                    <option>Barisciano</option>
+                    <option>Poggio Picenze</option>
+                    <option>Fossa</option>
+                    <option>Sant'Eusanio Forconese</option>
+                    <option>Villa Sant'Angelo</option>
+                    <option>San Demetrio ne' Vestini</option>
                     <option>Altra</option>
                 </select>
                 <button type="submit">Richiedi adesione</button>
@@ -563,11 +604,27 @@
 
         let reportMarkers = [];
         const zones = [
-            { name: 'Centro Storico', lat: 42.350, lng: 13.399, info: 'Quarti storici' },
-            { name: 'Pile', lat: 42.365, lng: 13.370, info: 'Zona moderna' },
-            { name: 'Coppito', lat: 42.370, lng: 13.345, info: 'Area universitaria' },
-            { name: 'Roio', lat: 42.340, lng: 13.420, info: 'Frazione Roio' },
-            { name: 'Paganica', lat: 42.360, lng: 13.450, info: 'Frazione storica' },
+            { name: 'Centro', lat: 42.350, lng: 13.399, info: 'Centro storico' },
+            { name: 'Sassa', lat: 42.330, lng: 13.380, info: 'Zona Ovest' },
+            { name: 'Preturo', lat: 42.380, lng: 13.295, info: 'Zona Ovest' },
+            { name: 'Coppito', lat: 42.370, lng: 13.345, info: 'Zona Ovest' },
+            { name: 'Cansatessa', lat: 42.375, lng: 13.360, info: 'Zona Ovest' },
+            { name: 'Arischia', lat: 42.410, lng: 13.340, info: 'Confine nord-ovest' },
+            { name: 'San Gregorio', lat: 42.335, lng: 13.455, info: 'Zona Est' },
+            { name: 'Onna', lat: 42.325, lng: 13.480, info: 'Zona Est' },
+            { name: 'Paganica', lat: 42.360, lng: 13.450, info: 'Zona Est' },
+            { name: 'Bazzano', lat: 42.340, lng: 13.470, info: 'Zona Est' },
+            { name: 'Tempera', lat: 42.345, lng: 13.490, info: 'Zona Est' },
+            { name: 'Camarda', lat: 42.380, lng: 13.520, info: 'Verso Gran Sasso' },
+            { name: 'Assergi', lat: 42.420, lng: 13.510, info: 'Pendici Gran Sasso' },
+            { name: 'Barisciano', lat: 42.320, lng: 13.590, info: 'Comune confinante Est' },
+            { name: 'Poggio Picenze', lat: 42.320, lng: 13.540, info: 'Comune confinante Est' },
+            { name: 'Fossa', lat: 42.300, lng: 13.490, info: 'Comune confinante Est' },
+            { name: 'Sant\'Eusanio Forconese', lat: 42.290, lng: 13.520, info: 'Comune confinante Est' },
+            { name: 'Villa Sant\'Angelo', lat: 42.270, lng: 13.540, info: 'Comune confinante Est' },
+            { name: 'San Demetrio ne\' Vestini', lat: 42.290, lng: 13.560, info: 'Comune confinante Est' }
+        ];
+        zones.forEach(z => {
             { name: 'Arischia', lat: 42.410, lng: 13.340, info: 'Frazione nord' },
             { name: 'Sassa', lat: 42.330, lng: 13.380, info: 'Frazione ovest' }
         ];
